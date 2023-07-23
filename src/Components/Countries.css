@@ -1,0 +1,20 @@
+.down-text h1{
+    font-size: 18px;
+}
+
+.inputs input[type='text'] {
+    border: none;
+}
+.inputs input[type='text']:focus{
+    outline: none;
+}
+.inputs select{
+    border: none;
+}
+.inputs select:focus{
+    outline: none;
+}
+.inputs .dark::placeholder{
+    color: white;
+}
+
