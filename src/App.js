@@ -14,8 +14,8 @@ function App() {
       <Header mode={mode} setMode={setMode} />
 
       <Routes>
-        <Route path='/' element={<Countries mode={ mode} setMode={setMode} countryDetails={countryDetails} setCountry={setCountryDetails} /> } />
-        <Route path='/details' element={<Details mode={ mode} setMode={setMode}  countryDetails={countryDetails} setCountry={setCountryDetails}/> } />
+        <Route path='REST-Countries-API/' element={<Countries mode={ mode} setMode={setMode} countryDetails={countryDetails} setCountry={setCountryDetails} /> } />
+        <Route path='REST-Countries-API/details' element={<Details mode={ mode} setMode={setMode}  countryDetails={countryDetails} setCountry={setCountryDetails}/> } />
       </Routes>
     </div>
   );
