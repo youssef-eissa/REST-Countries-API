@@ -17,7 +17,7 @@ return (
     <div className='container'>
         <div className='row'>
         <div className='col-12 my-4'>
-            <Link to='/' style={mode==="light"?{color:"black",textDecoration:"none"}:{color:"white",textDecoration:"none"}} className='col-1'>
+            <Link to='/REST-Countries-API/' style={mode==="light"?{color:"black",textDecoration:"none"}:{color:"white",textDecoration:"none"}} className='col-1'>
                 <KeyboardBackspaceIcon/> back
             </Link>
         </div>

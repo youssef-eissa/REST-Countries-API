@@ -15,6 +15,7 @@ function Countries({mode,countryDetails,setCountry}) {
         })
         setFiltered(filteredWord)
         setData([])
+        console.log(worddFiltered)
 
 }
     function handleOpt(e) {
@@ -48,7 +49,7 @@ return (
         <div className='row'>
             {data.length===0&& filtered.length===0?<div className='col-md-12 d-flex mt-5 justify-content-between gap-5 flex-wrap p-3'>
                 {JsonData.slice(0,6).map(country => {
-                    return  <Link to='/details'  onClick={() => setCountry(country)}  style={mode==="light"?{backgroundColor:"white",color:"black",textDecoration:"none"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3 col-12 d-flex flex-column '>
+                    return  <Link to='/REST-Countries-API/details'  onClick={() => setCountry(country)}  style={mode==="light"?{backgroundColor:"white",color:"black",textDecoration:"none"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3 col-12 d-flex flex-column '>
             <div  className=' col-md-12 cflag  '>
                 <img alt='flag' src={country.flag } className='img-fluid' />
             </div>
@@ -70,7 +71,7 @@ return (
                 })}
             </div> :data.length>0? <div className='col-md-12 d-flex mt-5 justify-content-around gap-5 flex-wrap'>
                     {data.map(country => {
-                return <Link to='/details'  onClick={() => setCountry(country)} style={mode==="light"?{backgroundColor:"white",color:"#848484",textDecoration:"none"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3 d-flex flex-column '>
+                return <Link to='/REST-Countries-API/details'  onClick={() => setCountry(country)} style={mode==="light"?{backgroundColor:"white",color:"#848484",textDecoration:"none"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3 d-flex flex-column '>
             <div  className=' col-md-12 cflag  '>
                 <img alt='flag' src={country.flag } className='img-fluid' />
             </div>
@@ -92,7 +93,7 @@ return (
             })}
             </div>:filtered.length>0?<div className='col-md-12 d-flex mt-5 justify-content-around gap-5 flex-wrap  '>
                     {filtered.map(country => {
-                return <Link to='/details'  onClick={() => setCountry(country)}style={mode==="light"?{textDecoration:"none",backgroundColor:"white",color:"#848484"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3  d-flex flex-column '>
+                return <Link to='/REST-Countries-API/details'  onClick={() => setCountry(country)}style={mode==="light"?{textDecoration:"none",backgroundColor:"white",color:"#848484"}:{backgroundColor:"#2B3844",color:"white",textDecoration:"none"}} key={country.name} className='col-md-3  d-flex flex-column '>
             <div  className=' col-md-12 cflag  '>
                 <img alt='flag' src={country.flag } className='img-fluid' />
             </div>
